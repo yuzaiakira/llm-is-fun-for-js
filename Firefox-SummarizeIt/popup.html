@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <title>Selected Text</title>
+    
+    <style>
+        html {
+            width: 600px;
+            height: 300px;
+            min-width: 400px;
+            min-height: 200px;
+            max-width: 800px;
+            max-height: 600px;
+        }
+        body { font-family: Arial, sans-serif; padding: 10px; }
+        #selectedText { white-space: pre-wrap; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <h2>Selected Text</h2>
+    <p id="status"></p>
+    <label for="api_key">API Key را وارد کنید</label>
+    <input type="password" id="api_key">
+    <button id="save">ذخیره</button>
+
+    <p id="selectedText">Select text on a page and open this popup.</p>
+    <script src="popup.js"></script>
+</body>
+</html>

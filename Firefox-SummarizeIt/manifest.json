@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Firefox SummarizeIt extension",
+    "version": "1.0",
+    "description": "Firefox ArticleSummarizer quickly condenses lengthy articles into key points, helping you read smarter and save time.",
+    "permissions": [
+        "activeTab",
+        "storage"
+      ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": [
+            "turndown.js",
+            "content.js"
+        ],
+        "run_at": "document_end"
+      }
+    ]
+  }
