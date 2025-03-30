@@ -53,10 +53,13 @@ function botResponse(userMsg) {
 ${userMsg} 
 
 Your job is to:  
-1. Complete the list by adding any missing steps.  
-2. Ensure each task is a single concise sentence.  
-3. Arrange tasks logically and sequentially.  
-4. Output ONLY in pure HTML \`<li>\` format without any extra words or explanations.  
+1. Carefully analyze the given tasks and identify any missing steps.  
+2. **Add all necessary missing tasks to ensure completeness.**  
+3. Ensure each task is a single concise sentence.  
+4. Arrange tasks logically and sequentially.  
+5. **If a task is too broad, break it down into smaller actionable steps.**  
+6. **Respond in the same language as the input tasks.**  
+7. Output ONLY in pure HTML \`<li>\` format without any extra words or explanations.  
 
 ### Example:  
 
